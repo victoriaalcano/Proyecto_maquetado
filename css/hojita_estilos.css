@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+@font-face {
+    src: url(../fonts/BodoniFLF-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+    font-family: myFont;
+}
+*{box-sizing: border-box;}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 90%;
+}
+nav a{
+    text-decoration: none;
+    margin: 2px;
+    color: black;
+}
+
+nav img{
+    width: 2%;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+}
+header{
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+header div{
+    width: 50%;
+    background-color: rgba(255,255,255,0.5);
+}
+header h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+header h1 span { 
+    font-family:myFont;
+    font-style: italic;
+    font-weight: bold;
+    color: #b45008;
+    font-size: 3em;
+}
+
+h2{
+    font-family: myFont;
+    font-size: 2em;
+    color: #e8bf65;
+}
+h3{
+    font-family: myFont;
+    font-size: 3em;
+    color: #b45008;
+}
+h4{
+    color: #e8bf65;
+    font-size: 1.4em;
+}
+p{
+    font-size: 1.2em;
+}
+
+article{
+    width: 50%;
+    padding: 1em;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #b45008;
+    color: white;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+}
