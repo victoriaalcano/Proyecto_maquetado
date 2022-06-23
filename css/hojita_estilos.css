@@ -81,6 +81,7 @@ h3 {
 h4 {
     color: #e8bf65;
     font-size: 1.4em;
+    border-bottom: 1px dotted #b45008;
 }
 
 /*------------------Main-----------------------*/
@@ -180,4 +181,8 @@ footer ul {
     font-family: myFont;
     font-size: 2em;
     color: #e8bf65;
+}
+
+.activo{
+    text-decoration: underline;
 }
