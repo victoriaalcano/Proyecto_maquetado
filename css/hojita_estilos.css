@@ -29,12 +29,18 @@ nav a {
     color: black;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 nav img {
     width: 2%;
     max-width: 100%;
     height: auto;
     margin-right: auto;
 }
+
+
 
 /*------------------Header-----------------------
 header {
@@ -82,6 +88,7 @@ h4 {
     color: #e8bf65;
     font-size: 1.4em;
     border-bottom: 1px dotted #b45008;
+    text-shadow: 2px 3px 2px rgba(200, 200, 14, 0.5);
 }
 
 /*------------------Main-----------------------*/
@@ -89,6 +96,8 @@ h4 {
 main {
     width: 100%;
 }
+/*------------------Div-----------------------*/
+
 
 /*---------------primer section----------------*/
 p {
@@ -99,24 +108,9 @@ p {
 article {
     width: 50%;
     padding: 1em;
+    float: left;
 }
 
-/*------------------Footer-----------------------*/
-
-footer {
-    width: 100%;
-    height: 200px;
-    background-color: #b45008;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-footer ul {
-    margin: 0;
-    padding: 0;
-}
 
 /*------------------ID'S-----------------------*/
 #encabezado {
@@ -166,7 +160,14 @@ footer ul {
     width: 80%;
     margin: auto;
     display: block;
-}                                                         
+    border-radius: 10px /20px;
+    box-shadow: 1px 3px 10px black;
+}
+
+.division img:hover {
+    opacity: 0.5;
+}
+
 
 .nosotros {
     background-color: #b45008;
@@ -183,6 +184,46 @@ footer ul {
     color: #e8bf65;
 }
 
-.activo{
+.nosotros .grilla {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 200px 200px;
+}
+
+.grilla div{ background-color: red;
+     width: auto;
+     background-repeat: no-repeat;
+    background-size: cover;}
+.grilla div:first-child{
+    background-position: -140px 0px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(/img/gym-01.JPG);
+}
+
+.grilla div:nth-child(2) {background-image: url(/img/gym-02.JPG);}
+.grilla div:nth-child(3) {background-image: url(/img/gym-03.JPG);}
+.activo {
     text-decoration: underline;
 }
+
+/*------------------Footer-----------------------*/
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #b45008;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul:first-of-type, footer p:first-child{font-weight: bold;}
+
