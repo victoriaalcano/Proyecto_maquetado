@@ -96,6 +96,7 @@ h4 {
 main {
     width: 100%;
 }
+
 /*------------------Div-----------------------*/
 
 
@@ -141,6 +142,19 @@ article {
     color: #b45008;
     font-family: myFont;
     font-size: 3em;
+}
+
+#chat {
+    position: fixed;
+    left: 95%; /*propuesta de 97%, me quedó mejor al 95%*/
+    top: 88%;
+    background-image: linear-gradient(rgba(226, 127, 14, 0.5),rgba(255, 255, 255, 0.5)), url(/img/chat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100%; /*para formar círculos perfectos*/
 }
 
 /*------------------Clases-----------------------*/
@@ -191,19 +205,28 @@ article {
     grid-template-rows: 200px 200px;
 }
 
-.grilla div{ background-color: red;
-     width: auto;
-     background-repeat: no-repeat;
-    background-size: cover;}
-.grilla div:first-child{
+.grilla div {
+    background-color: red;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grilla div:first-child {
     background-position: -140px 0px;
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url(/img/gym-01.JPG);
 }
 
-.grilla div:nth-child(2) {background-image: url(/img/gym-02.JPG);}
-.grilla div:nth-child(3) {background-image: url(/img/gym-03.JPG);}
+.grilla div:nth-child(2) {
+    background-image: url(/img/gym-02.JPG);
+}
+
+.grilla div:nth-child(3) {
+    background-image: url(/img/gym-03.JPG);
+}
+
 .activo {
     text-decoration: underline;
 }
@@ -225,5 +248,7 @@ footer ul {
     padding: 0;
 }
 
-footer ul:first-of-type, footer p:first-child{font-weight: bold;}
-
+footer ul:first-of-type,
+footer p:first-child {
+    font-weight: bold;
+}
