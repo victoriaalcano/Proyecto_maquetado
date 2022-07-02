@@ -14,6 +14,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 90%;
+    margin: 0;
+    padding: 0;
+    counter-reset: miContador;
 }
 
 /*------------------Nav-----------------------*/
@@ -89,6 +92,12 @@ h4 {
     font-size: 1.4em;
     border-bottom: 1px dotted #b45008;
     text-shadow: 2px 3px 2px rgba(200, 200, 14, 0.5);
+}
+h4::before {
+    counter-increment: miContador;
+    content: counter(miContador, upper-roman) "-"; 
+    font-variant: small-caps;
+    font-size: 20px;
 }
 
 /*------------------Main-----------------------*/
